@@ -225,7 +225,7 @@ function PlasmicShop__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToTrending"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-4` };
+                      const actionArgs = { destination: `/trending` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -279,7 +279,7 @@ function PlasmicShop__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToContact"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-5` };
+                      const actionArgs = { destination: `/contact` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -333,7 +333,7 @@ function PlasmicShop__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToShop"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page` };
+                      const actionArgs = { destination: `/shop` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -387,7 +387,7 @@ function PlasmicShop__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToLogin"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-2` };
+                      const actionArgs = { destination: `/login` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -440,7 +440,7 @@ function PlasmicShop__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToRegister"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-3` };
+                      const actionArgs = { destination: `/register` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -1125,7 +1125,7 @@ function PlasmicShop__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToProduct"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-6` };
+                      const actionArgs = { destination: `/product` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&

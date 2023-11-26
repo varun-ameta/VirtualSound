@@ -60,6 +60,9 @@
   transition-property: all;
   transition-duration: 1s;
   padding-right: 0px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
 }

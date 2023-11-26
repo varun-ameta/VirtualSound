@@ -19,8 +19,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Button2 from "../../Button2"; // plasmic-import: anilgu949Hy0/component
-import { SliderWrapper } from "@plasmicpkgs/react-slick";
-import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import { useScreenVariants as useScreenVariantsonqwsGpBfm6K } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ONQWSGpBfm6K/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -34,8 +32,6 @@ import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: QM6
 import Icon38Icon from "./icons/PlasmicIcon__Icon38"; // plasmic-import: AvuBveerA9hs/icon
 import logopng9YqBoXKtla6J from "./images/logopng.png"; // plasmic-import: 9yqBoXKtla6j/picture
 import appleMax1JpegFrg94KvWotV from "./images/appleMax1Jpeg.jpg"; // plasmic-import: frg94KvWOT-v/picture
-import appleMax3JpegQt2YaDcuPg8R from "./images/appleMax3Jpeg.jpg"; // plasmic-import: qt2yaDCUPg8R/picture
-import appleMax2JpegH8M3Nkh8J0T from "./images/appleMax2Jpeg.jpg"; // plasmic-import: h8_m3NKH8j0T/picture
 
 createPlasmicElementProxy;
 
@@ -63,17 +59,6 @@ function PlasmicProduct__RenderFunc(props) {
         type: "private",
         variableType: "text",
         initFunc: ({ $props, $state, $queries, $ctx }) => "This is a text area."
-      },
-      {
-        path: "sliderCarousel.currentSlide",
-        type: "private",
-        variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
-        refName: "sliderCarousel",
-        onMutate: p.generateOnMutateForSpec(
-          "currentSlide",
-          SliderWrapper_Helpers
-        )
       }
     ],
 
@@ -668,140 +653,6 @@ function PlasmicProduct__RenderFunc(props) {
                 </div>
               </p.Stack>
             </div>
-            {(() => {
-              const child$Props = {
-                beforeChange: p.generateStateOnChangePropForCodeComponents(
-                  $state,
-                  "currentSlide",
-                  ["sliderCarousel", "currentSlide"],
-                  SliderWrapper_Helpers
-                ),
-                className: classNames("__wab_instance", sty.sliderCarousel),
-                initialSlide: p.generateStateValueProp($state, [
-                  "sliderCarousel",
-                  "currentSlide"
-                ]),
-                ref: ref => {
-                  $refs["sliderCarousel"] = ref;
-                },
-                sliderScopeClassName: sty["sliderCarousel__slider"]
-              };
-              p.initializeCodeComponentStates(
-                $state,
-                [
-                  {
-                    name: "currentSlide",
-                    plasmicStateName: "sliderCarousel.currentSlide"
-                  }
-                ],
-
-                [],
-                SliderWrapper_Helpers ?? {},
-                child$Props
-              );
-              return (
-                <SliderWrapper
-                  data-plasmic-name={"sliderCarousel"}
-                  data-plasmic-override={overrides.sliderCarousel}
-                  {...child$Props}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___6Vev4)}
-                  >
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img___4XGxa)}
-                      displayHeight={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "325px"
-                          : "auto"
-                      }
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? "309px"
-                          : "440px"
-                      }
-                      src={{
-                        src: appleMax1JpegFrg94KvWotV,
-                        fullWidth: 1000,
-                        fullHeight: 1000,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__vc4S9)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__iYdmY)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__jg9H4
-                        )}
-                      >
-                        {"Enter some text"}
-                      </div>
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img___9Of0Q)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        src={{
-                          src: appleMax3JpegQt2YaDcuPg8R,
-                          fullWidth: 1000,
-                          fullHeight: 1000,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___0FsHm)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__xEVkX)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__n8AyI
-                        )}
-                      >
-                        {"Enter some text"}
-                      </div>
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__zcYg)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        src={{
-                          src: appleMax2JpegH8M3Nkh8J0T,
-                          fullWidth: 1000,
-                          fullHeight: 1000,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-                  </div>
-                </SliderWrapper>
-              );
-            })()}
             <Button2
               className={classNames("__wab_instance", sty.button2__xKv4J)}
             >
@@ -882,6 +733,27 @@ function PlasmicProduct__RenderFunc(props) {
                 </React.Fragment>
               )}
             </div>
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__c8Gfr)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "304px"
+                  : "563px"
+              }
+              loading={"lazy"}
+              src={{
+                src: appleMax1JpegFrg94KvWotV,
+                fullWidth: 1000,
+                fullHeight: 1000,
+                aspectRatio: undefined
+              }}
+            />
           </section>
           <p.Stack
             as={"div"}
@@ -955,7 +827,7 @@ function PlasmicProduct__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToTrending"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-4` };
+                      const actionArgs = { destination: `/trending` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -1009,7 +881,7 @@ function PlasmicProduct__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToContact"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-5` };
+                      const actionArgs = { destination: `/contact` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -1063,7 +935,7 @@ function PlasmicProduct__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToShop"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page` };
+                      const actionArgs = { destination: `/shop` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -1117,7 +989,7 @@ function PlasmicProduct__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToLogin"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-2` };
+                      const actionArgs = { destination: `/login` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -1170,7 +1042,7 @@ function PlasmicProduct__RenderFunc(props) {
                 const $steps = {};
                 $steps["goToRegister"] = true
                   ? (() => {
-                      const actionArgs = { destination: `/new-page-3` };
+                      const actionArgs = { destination: `/register` };
                       return (({ destination }) => {
                         if (
                           typeof destination === "string" &&
@@ -1219,20 +1091,11 @@ function PlasmicProduct__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  product: [
-    "product",
-    "h3",
-    "section",
-    "columns",
-    "textarea",
-    "sliderCarousel"
-  ],
-
+  product: ["product", "h3", "section", "columns", "textarea"],
   h3: ["h3"],
-  section: ["section", "columns", "textarea", "sliderCarousel"],
+  section: ["section", "columns", "textarea"],
   columns: ["columns", "textarea"],
-  textarea: ["textarea"],
-  sliderCarousel: ["sliderCarousel"]
+  textarea: ["textarea"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -1271,7 +1134,6 @@ export const PlasmicProduct = Object.assign(
     section: makeNodeComponent("section"),
     columns: makeNodeComponent("columns"),
     textarea: makeNodeComponent("textarea"),
-    sliderCarousel: makeNodeComponent("sliderCarousel"),
     // Metadata about props expected for PlasmicProduct
     internalVariantProps: PlasmicProduct__VariantProps,
     internalArgProps: PlasmicProduct__ArgProps,

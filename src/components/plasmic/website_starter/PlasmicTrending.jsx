@@ -18,8 +18,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Button2 from "../../Button2"; // plasmic-import: anilgu949Hy0/component
-import { SliderWrapper } from "@plasmicpkgs/react-slick";
-import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
 import { useScreenVariants as useScreenVariantsonqwsGpBfm6K } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: ONQWSGpBfm6K/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_antd_5_hostless_css from "../antd_5_hostless/plasmic_antd_5_hostless.module.css"; // plasmic-import: ohDidvG9XsCeFumugENU3J/projectcss
@@ -32,9 +30,6 @@ import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: O9Uaz-soQda
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: O9BNWTsi3y_D/icon
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: omV8tM-UrKpt/icon
 import logopng9YqBoXKtla6J from "./images/logopng.png"; // plasmic-import: 9yqBoXKtla6j/picture
-import trend1JpgFDtwJnJiGe1P from "./images/trend1Jpg.jpg"; // plasmic-import: fDtwJNJiGe1p/picture
-import frame003JpgPgsUgTwg3SEn from "./images/frame003Jpg.jpg"; // plasmic-import: pgsUgTWG3sEn/picture
-import frame001JpgXEbk4UTdWT2 from "./images/frame001Jpg.png"; // plasmic-import: XEbk4UTdW-T2/picture
 
 createPlasmicElementProxy;
 
@@ -55,29 +50,6 @@ function PlasmicTrending__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const currentUser = p.useCurrentUser?.() || {};
-  const stateSpecs = React.useMemo(
-    () => [
-      {
-        path: "sliderCarousel.currentSlide",
-        type: "private",
-        variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
-        refName: "sliderCarousel",
-        onMutate: p.generateOnMutateForSpec(
-          "currentSlide",
-          SliderWrapper_Helpers
-        )
-      }
-    ],
-
-    [$props, $ctx, $refs]
-  );
-  const $state = p.useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsonqwsGpBfm6K()
   });
@@ -173,7 +145,7 @@ function PlasmicTrending__RenderFunc(props) {
                   const $steps = {};
                   $steps["goToTrending"] = true
                     ? (() => {
-                        const actionArgs = { destination: `/new-page-4` };
+                        const actionArgs = { destination: `/trending` };
                         return (({ destination }) => {
                           if (
                             typeof destination === "string" &&
@@ -227,7 +199,7 @@ function PlasmicTrending__RenderFunc(props) {
                   const $steps = {};
                   $steps["goToContact"] = true
                     ? (() => {
-                        const actionArgs = { destination: `/new-page-5` };
+                        const actionArgs = { destination: `/contact` };
                         return (({ destination }) => {
                           if (
                             typeof destination === "string" &&
@@ -281,7 +253,7 @@ function PlasmicTrending__RenderFunc(props) {
                   const $steps = {};
                   $steps["goToShop"] = true
                     ? (() => {
-                        const actionArgs = { destination: `/new-page` };
+                        const actionArgs = { destination: `/shop` };
                         return (({ destination }) => {
                           if (
                             typeof destination === "string" &&
@@ -335,7 +307,7 @@ function PlasmicTrending__RenderFunc(props) {
                   const $steps = {};
                   $steps["goToLogin"] = true
                     ? (() => {
-                        const actionArgs = { destination: `/new-page-2` };
+                        const actionArgs = { destination: `/login` };
                         return (({ destination }) => {
                           if (
                             typeof destination === "string" &&
@@ -388,7 +360,7 @@ function PlasmicTrending__RenderFunc(props) {
                   const $steps = {};
                   $steps["goToRegister"] = true
                     ? (() => {
-                        const actionArgs = { destination: `/new-page-3` };
+                        const actionArgs = { destination: `/register` };
                         return (({ destination }) => {
                           if (
                             typeof destination === "string" &&
@@ -537,109 +509,6 @@ function PlasmicTrending__RenderFunc(props) {
               ) : null}
             </p.Stack>
           </p.Stack>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__sFYgH
-            )}
-          >
-            {"What's Trending?"}
-          </div>
-          {(() => {
-            const child$Props = {
-              beforeChange: p.generateStateOnChangePropForCodeComponents(
-                $state,
-                "currentSlide",
-                ["sliderCarousel", "currentSlide"],
-                SliderWrapper_Helpers
-              ),
-              className: classNames("__wab_instance", sty.sliderCarousel),
-              initialSlide: p.generateStateValueProp($state, [
-                "sliderCarousel",
-                "currentSlide"
-              ]),
-              ref: ref => {
-                $refs["sliderCarousel"] = ref;
-              },
-              sliderScopeClassName: sty["sliderCarousel__slider"]
-            };
-            p.initializeCodeComponentStates(
-              $state,
-              [
-                {
-                  name: "currentSlide",
-                  plasmicStateName: "sliderCarousel.currentSlide"
-                }
-              ],
-
-              [],
-              SliderWrapper_Helpers ?? {},
-              child$Props
-            );
-            return (
-              <SliderWrapper
-                data-plasmic-name={"sliderCarousel"}
-                data-plasmic-override={overrides.sliderCarousel}
-                {...child$Props}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__ubVan)}>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__pXrQb)}
-                    displayHeight={"290px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"411px"}
-                    src={{
-                      src: trend1JpgFDtwJnJiGe1P,
-                      fullWidth: 1600,
-                      fullHeight: 900,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__wcxlS)}>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__d9Ps8)}
-                    displayHeight={"287px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"412px"}
-                    src={{
-                      src: frame003JpgPgsUgTwg3SEn,
-                      fullWidth: 2500,
-                      fullHeight: 1875,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__zlSjt)}>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__jmNBq)}
-                    displayHeight={"283px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    src={{
-                      src: frame001JpgXEbk4UTdWT2,
-                      fullWidth: 3200,
-                      fullHeight: 2048,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-              </SliderWrapper>
-            );
-          })()}
           <h1
             data-plasmic-name={"h1"}
             data-plasmic-override={overrides.h1}
@@ -659,9 +528,19 @@ function PlasmicTrending__RenderFunc(props) {
               sty.text__xxu5P
             )}
           >
-            {
-              "Here are some of the latest news on headphones:\n\n>Sony WH-1000XM5 headphones fall back to $328 in early Black Friday deal. Sony WH1000XM5 headphones\n>Sony's WH-1000XM5 ANC headphones drop to $330.\n>Bose QuietComfort Ultra Headphones review: A new spin on a reliable formula. Bose QuietComfort Ultra Headphones\n>Could MEMS be the next big leap in headphone technology?\n>The 22 best Prime Day deals on headphones: Save on AirPods, Sony, Beats, Bose and more.\n>These are just a few of the many new stories about headphones that have been published in recent weeks. For more news and information, please      check out the following websites:"
-            }
+            <React.Fragment>
+              <span
+                className={"plasmic_default__all plasmic_default__span"}
+                style={{ fontWeight: 700 }}
+              >
+                {"Here are some of the latest news on headphones:"}
+              </span>
+              <React.Fragment>
+                {
+                  "\n\n>Sony WH-1000XM5 headphones fall back to $328 in early Black Friday deal. Sony WH1000XM5 headphones\n>Sony's WH-1000XM5 ANC headphones drop to $330.\n>Bose QuietComfort Ultra Headphones review: A new spin on a reliable formula. Bose QuietComfort Ultra Headphones\n>Could MEMS be the next big leap in headphone technology?\n>The 22 best Prime Day deals on headphones: Save on AirPods, Sony, Beats, Bose and more.\n>These are just a few of the many new stories about headphones that have been published in recent weeks. For more news and information, please      check out the following websites:"
+                }
+              </React.Fragment>
+            </React.Fragment>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__a8QqF)}>
             <p.Stack
@@ -1102,10 +981,9 @@ function PlasmicTrending__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  trending: ["trending", "h3", "button", "sliderCarousel", "h1", "columns"],
+  trending: ["trending", "h3", "button", "h1", "columns"],
   h3: ["h3"],
   button: ["button"],
-  sliderCarousel: ["sliderCarousel"],
   h1: ["h1"],
   columns: ["columns"]
 };
@@ -1144,7 +1022,6 @@ export const PlasmicTrending = Object.assign(
     // Helper components rendering sub-elements
     h3: makeNodeComponent("h3"),
     button: makeNodeComponent("button"),
-    sliderCarousel: makeNodeComponent("sliderCarousel"),
     h1: makeNodeComponent("h1"),
     columns: makeNodeComponent("columns"),
     // Metadata about props expected for PlasmicTrending
